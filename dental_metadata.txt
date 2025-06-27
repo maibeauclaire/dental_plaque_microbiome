@@ -1,0 +1,273 @@
+group	SampleID_Description	Condition	Growth	Treatment	Replicate	Description
+91	91-AN-BF-DMSO-1	Anaerobic	Biofilm	DMSO	1	Plaque_Anaerobic_Biofilm_DMSO_only_Replicate 1
+92	92-AN-BF-DMSO-2	Anaerobic	Biofilm	DMSO	2	Plaque_Anaerobic_Biofilm_DMSO_only_Replicate 2
+93	93-AN-BF-DMSO-3	Anaerobic	Biofilm	DMSO	3	Plaque_Anaerobic_Biofilm_DMSO_only_Replicate 3
+94	94-AN-BF-DMSO-4	Anaerobic	Biofilm	DMSO	4	Plaque_Anaerobic_Biofilm_DMSO_only_Replicate 4
+95	95-AN-BF-DMSO-5	Anaerobic	Biofilm	DMSO	5	Plaque_Anaerobic_Biofilm_DMSO_only_Replicate 5
+96	96-AN-BF-DMSO-6	Anaerobic	Biofilm	DMSO	6	Plaque_Anaerobic_Biofilm_DMSO_only_Replicate 6
+97	97-AN-PL-DMSO-1	Anaerobic	Planktonic	DMSO	1	Plaque_Anaerobic_Planktonic_DMSO_only_Replicate 1
+98	98-AN-PL-DMSO-2	Anaerobic	Planktonic	DMSO	2	Plaque_Anaerobic_Planktonic_DMSO_only_Replicate 2
+99	99-AN-PL-DMSO-3	Anaerobic	Planktonic	DMSO	3	Plaque_Anaerobic_Planktonic_DMSO_only_Replicate 3
+100	100-AN-PL-DMSO-4	Anaerobic	Planktonic	DMSO	4	Plaque_Anaerobic_Planktonic_DMSO_only_Replicate 4
+101	101-AN-PL-DMSO-5	Anaerobic	Planktonic	DMSO	5	Plaque_Anaerobic_Planktonic_DMSO_only_Replicate 5
+102	102-AN-PL-DMSO-6	Anaerobic	Planktonic	DMSO	6	Plaque_Anaerobic_Planktonic_DMSO_only_Replicate 6
+121	121-AN-BF-C6-1	Anaerobic	Biofilm	C6-HSL	1	Plaque_Anaerobic_Biofilm_C6-HSL_Replicate 1
+122	122-AN-BF-C6-2	Anaerobic	Biofilm	C6-HSL	2	Plaque_Anaerobic_Biofilm_C6-HSL_Replicate 2
+123	123-AN-BF-C6-3	Anaerobic	Biofilm	C6-HSL	3	Plaque_Anaerobic_Biofilm_C6-HSL_Replicate 3
+124	124-AN-BF-C6-4	Anaerobic	Biofilm	C6-HSL	4	Plaque_Anaerobic_Biofilm_C6-HSL_Replicate 4
+125	125-AN-BF-C6-5	Anaerobic	Biofilm	C6-HSL	5	Plaque_Anaerobic_Biofilm_C6-HSL_Replicate 5
+126	126-AN-BF-C6-6	Anaerobic	Biofilm	C6-HSL	6	Plaque_Anaerobic_Biofilm_C6-HSL_Replicate 6
+127	127-AN-PL-C6-1	Anaerobic	Planktonic	C6-HSL	1	Plaque_Anaerobic_Planktonic_C6-HSL_Replicate 1
+128	128-AN-PL-C6-2	Anaerobic	Planktonic	C6-HSL	2	Plaque_Anaerobic_Planktonic_C6-HSL_Replicate 2
+129	129-AN-PL-C6-3	Anaerobic	Planktonic	C6-HSL	3	Plaque_Anaerobic_Planktonic_C6-HSL_Replicate 3
+130	130-AN-PL-C6-4	Anaerobic	Planktonic	C6-HSL	4	Plaque_Anaerobic_Planktonic_C6-HSL_Replicate 4
+131	131-AN-PL-C6-5	Anaerobic	Planktonic	C6-HSL	5	Plaque_Anaerobic_Planktonic_C6-HSL_Replicate 5
+132	132-AN-PL-C6-6	Anaerobic	Planktonic	C6-HSL	6	Plaque_Anaerobic_Planktonic_C6-HSL_Replicate 6
+151	151-AN-BF-C12-1	Anaerobic	Biofilm	C12-HSL	1	Plaque_Anaerobic_Biofilm_C12-HSL_Replicate 1
+152	152-AN-BF-C12-2	Anaerobic	Biofilm	C12-HSL	2	Plaque_Anaerobic_Biofilm_C12-HSL_Replicate 2
+153	153-AN-BF-C12-3	Anaerobic	Biofilm	C12-HSL	3	Plaque_Anaerobic_Biofilm_C12-HSL_Replicate 3
+154	154-AN-BF-C12-4	Anaerobic	Biofilm	C12-HSL	4	Plaque_Anaerobic_Biofilm_C12-HSL_Replicate 4
+155	155-AN-BF-C12-5	Anaerobic	Biofilm	C12-HSL	5	Plaque_Anaerobic_Biofilm_C12-HSL_Replicate 5
+156	156-AN-BF-C12-6	Anaerobic	Biofilm	C12-HSL	6	Plaque_Anaerobic_Biofilm_C12-HSL_Replicate 6
+157	157-AN-PL-C12-1	Anaerobic	Planktonic	C12-HSL	1	Plaque_Anaerobic_Planktonic_C12-HSL_Replicate 1
+158	158-AN-PL-C12-2	Anaerobic	Planktonic	C12-HSL	2	Plaque_Anaerobic_Planktonic_C12-HSL_Replicate 2
+159	159-AN-PL-C12-3	Anaerobic	Planktonic	C12-HSL	3	Plaque_Anaerobic_Planktonic_C12-HSL_Replicate 3
+160	160-AN-PL-C12-4	Anaerobic	Planktonic	C12-HSL	4	Plaque_Anaerobic_Planktonic_C12-HSL_Replicate 4
+161	161-AN-PL-C12-5	Anaerobic	Planktonic	C12-HSL	5	Plaque_Anaerobic_Planktonic_C12-HSL_Replicate 5
+162	162-AN-PL-C12-6	Anaerobic	Planktonic	C12-HSL	6	Plaque_Anaerobic_Planktonic_C12-HSL_Replicate 6
+181	181-AE-BF-5A8-1	Aerobic	Biofilm	5A8	1	Plaque_Aerobic_Biofilm_5A8_Replicate 1
+182	182-AE-BF-5A8-2	Aerobic	Biofilm	5A8	2	Plaque_Aerobic_Biofilm_5A8_Replicate 2
+183	183-AE-BF-5A8-3	Aerobic	Biofilm	5A8	3	Plaque_Aerobic_Biofilm_5A8_Replicate 3
+184	184-AE-BF-5A8-4	Aerobic	Biofilm	5A8	4	Plaque_Aerobic_Biofilm_5A8_Replicate 4
+185	185-AE-BF-5A8-5	Aerobic	Biofilm	5A8	5	Plaque_Aerobic_Biofilm_5A8_Replicate 5
+186	186-AE-BF-5A8-6	Aerobic	Biofilm	5A8	6	Plaque_Aerobic_Biofilm_5A8_Replicate 6
+187	187-AE-PL-5A8-1	Aerobic	Planktonic	5A8	1	Plaque_Aerobic_Planktonic_5A8_Replicate 1
+188	188-AE-PL-5A8-2	Aerobic	Planktonic	5A8	2	Plaque_Aerobic_Planktonic_5A8_Replicate 2
+189	189-AE-PL-5A8-3	Aerobic	Planktonic	5A8	3	Plaque_Aerobic_Planktonic_5A8_Replicate 3
+190	190-AE-PL-5A8-4	Aerobic	Planktonic	5A8	4	Plaque_Aerobic_Planktonic_5A8_Replicate 4
+191	191-AE-PL-5A8-5	Aerobic	Planktonic	5A8	5	Plaque_Aerobic_Planktonic_5A8_Replicate 5
+192	192-AE-PL-5A8-6	Aerobic	Planktonic	5A8	6	Plaque_Aerobic_Planktonic_5A8_Replicate 6
+211	211-AE-BF-SSPOX-1	Aerobic	Biofilm	SsoPox	1	Plaque_Aerobic_Biofilm_SsoPox_Replicate 1
+212	212-AE-BF-SSPOX-2	Aerobic	Biofilm	SsoPox	2	Plaque_Aerobic_Biofilm_SsoPox_Replicate 2
+213	213-AE-BF-SSPOX-3	Aerobic	Biofilm	SsoPox	3	Plaque_Aerobic_Biofilm_SsoPox_Replicate 3
+214	214-AE-BF-SSPOX-4	Aerobic	Biofilm	SsoPox	4	Plaque_Aerobic_Biofilm_SsoPox_Replicate 4
+215	215-AE-BF-SSPOX-5	Aerobic	Biofilm	SsoPox	5	Plaque_Aerobic_Biofilm_SsoPox_Replicate 5
+216	216-AE-BF-SSPOX-6	Aerobic	Biofilm	SsoPox	6	Plaque_Aerobic_Biofilm_SsoPox_Replicate 6
+217	217-AE-PL-SSPOX-1	Aerobic	Planktonic	SsoPox	1	Plaque_Aerobic_Planktonic_SsoPox_Replicate 1
+218	218-AE-PL-SSPOX-2	Aerobic	Planktonic	SsoPox	2	Plaque_Aerobic_Planktonic_SsoPox_Replicate 2
+219	219-AE-PL-SSPOX-3	Aerobic	Planktonic	SsoPox	3	Plaque_Aerobic_Planktonic_SsoPox_Replicate 3
+220	220-AE-PL-SSPOX-4	Aerobic	Planktonic	SsoPox	4	Plaque_Aerobic_Planktonic_SsoPox_Replicate 4
+221	221-AE-PL-SSPOX-5	Aerobic	Planktonic	SsoPox	5	Plaque_Aerobic_Planktonic_SsoPox_Replicate 5
+222	222-AE-PL-SSPOX-6	Aerobic	Planktonic	SsoPox	6	Plaque_Aerobic_Planktonic_SsoPox_Replicate 6
+241	241-AE-BF-GCL-1	Aerobic	Biofilm	GcL	1	Plaque_Aerobic_Biofilm_GcL_Replicate 1
+242	242-AE-BF-GCL-2	Aerobic	Biofilm	GcL	2	Plaque_Aerobic_Biofilm_GcL_Replicate 2
+243	243-AE-BF-GCL-3	Aerobic	Biofilm	GcL	3	Plaque_Aerobic_Biofilm_GcL_Replicate 3
+244	244-AE-BF-GCL-4	Aerobic	Biofilm	GcL	4	Plaque_Aerobic_Biofilm_GcL_Replicate 4
+245	245-AE-BF-GCL-5	Aerobic	Biofilm	GcL	5	Plaque_Aerobic_Biofilm_GcL_Replicate 5
+246	246-AE-BF-GCL-6	Aerobic	Biofilm	GcL	6	Plaque_Aerobic_Biofilm_GcL_Replicate 6
+247	247-AE-PL-GCL-1	Aerobic	Planktonic	GcL	1	Plaque_Aerobic_Planktonic_GcL_Replicate 1
+248	248-AE-PL-GCL-2	Aerobic	Planktonic	GcL	2	Plaque_Aerobic_Planktonic_GcL_Replicate 2
+249	249-AE-PL-GCL-3	Aerobic	Planktonic	GcL	3	Plaque_Aerobic_Planktonic_GcL_Replicate 3
+250	250-AE-PL-GCL-4	Aerobic	Planktonic	GcL	4	Plaque_Aerobic_Planktonic_GcL_Replicate 4
+251	251-AE-PL-GCL-5	Aerobic	Planktonic	GcL	5	Plaque_Aerobic_Planktonic_GcL_Replicate 5
+252	252-AE-PL-GCL-6	Aerobic	Planktonic	GcL	6	Plaque_Aerobic_Planktonic_GcL_Replicate 6
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
