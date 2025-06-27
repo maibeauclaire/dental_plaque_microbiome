@@ -1,0 +1,71 @@
+##Combine paired-end reads
+make.file(inputdir=., type=fastq, prefix=dentalae)
+make.contigs(file=dentalae.files)
+summary.seqs(fasta=dentalae.trim.contigs.fasta)
+
+##Remove poor quality
+screen.seqs(fasta=dentalae.trim.contigs.fasta, group=dentalae.contigs.groups, maxambig=0, maxlength=300, maxhomop=8)
+summary.seqs(fasta=dentalae.trim.contigs.good.fasta)
+
+##Unique sequences
+unique.seqs(fasta=dentalae.trim.contigs.good.fasta)
+
+##Simplify names and groups with counts
+count.seqs(name=dentalae.trim.contigs.good.names, group=dentalae.contigs.good.groups)
+summary.seqs(fasta=dentalae.trim.contigs.good.unique.fasta,count=dentalae.trim.contigs.good.count_table)
+
+##Align sequences
+align.seqs(fasta=dentalae.trim.contigs.good.unique.fasta, reference=/panfs/roc/groups/14/eliasm/vuxxx231/ref_files/silva.132.v4.fasta, flip=T)
+summary.seqs(fasta=dentalae.trim.contigs.good.unique.align, count=dentalae.trim.contigs.good.count_table)
+
+##Rescreen
+screen.seqs(fasta=dentalae.trim.contigs.good.unique.align, count=dentalae.trim.contigs.good.count_table, summary=dentalae.trim.contigs.good.unique.summary, start=13862, end=23444, criteria=90)
+summary.seqs(fasta=dentalae.trim.contigs.good.unique.good.align, count=dentalae.trim.contigs.good.good.count_table)
+
+##Filter
+filter.seqs(fasta=dentalae.trim.contigs.good.unique.good.align, vertical=T, trump=.)
+unique.seqs(fasta=dentalae.trim.contigs.good.unique.good.filter.fasta, count=dentalae.trim.contigs.good.good.count_table)
+
+##Pre-cluster
+pre.cluster(fasta=dentalae.trim.contigs.good.unique.good.filter.unique.fasta, count=dentalae.trim.contigs.good.unique.good.filter.count_table, diffs=2)
+summary.seqs(fasta=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.count_table)
+
+##Remove chimera
+chimera.uchime(fasta=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t)
+remove.seqs(fasta=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.count_table, accnos=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.accnos)
+summary.seqs(fasta=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.pick.count_table)
+
+##Classify sequences RDP
+classify.seqs(fasta=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table, reference=/panfs/roc/groups/14/eliasm/vuxxx231/ref_files/trainset18_062020.rdp.fasta, taxonomy=/panfs/roc/groups/14/eliasm/vuxxx231/ref_files/trainset18_062020.rdp.tax, cutoff=80)
+remove.lineage(fasta=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table, taxonomy=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.pick.rdp.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
+summary.seqs(fasta=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, count=dentalae.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table)
+system(mv dentalae.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta dentalae.final.fasta)
+system(mv dentalae.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table dentalae.final.count_table)
+
+##Define OTUs
+dist.seqs(fasta=dentalae.final.fasta,cutoff=0.03)
+cluster.split(column=dentalae.final.dist, count=dentalae.final.count_table, cutoff=0.03, method=average)
+make.shared(list=dentalae.final.an.list, count=dentalae.final.count_table, label=0.03)
+
+##Classify OTUs
+classify.seqs(fasta=dentalae.final.fasta,count=dentalae.final.count_table,template=/panfs/roc/groups/14/eliasm/vuxxx231/ref_files/trainset18_062020.rdp.fasta,taxonomy=/panfs/roc/groups/14/eliasm/vuxxx231/ref_files/trainset18_062020.rdp.tax, cutoff=80)
+classify.otu(list=dentalae.final.an.list, taxonomy=dentalae.final.rdp.wang.taxonomy, count=dentalae.final.count_table, label=0.03)
+
+##Normalization
+sub.sample(shared=dentalae.final.an.shared, size=7924)
+
+##Alpha diversity
+summary.single(shared=dentalae.final.an.0.01.subsample.shared, label=0.03, calc=coverage-sobs-shannon-chao-ace-simpson)
+
+##Beta diversity
+dist.shared(shared=dentalae.final.an.0.01.subsample.shared, calc=braycurtis)
+pcoa(phylip=dentalae.final.an.0.01.subsample.braycurtis.0.01.lt.dist)
+nmds(phylip=dentalae.final.an.0.01.subsample.braycurtis.0.01.lt.dist)
+nmds(phylip=dentalae.final.an.0.01.subsample.braycurtis.0.01.lt.dist, mindim=3, maxdim=3)
+amova(phylip=dentalae.final.an.0.01.subsample.braycurtis.0.01.lt.dist, design=dentalae.treatment.design)
+anosim(phylip=dentalae.final.an.0.01.subsample.braycurtis.0.01.lt.dist, design=dentalae.treatment.design)
+tree.shared(shared=dentalae.final.an.0.01.subsample.shared, label=0.01, calc=braycurtis)
+
+
+
+
